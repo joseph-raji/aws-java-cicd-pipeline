@@ -1,35 +1,98 @@
-# WebProject
-Welcome to this project combining Java web app development and AWS CI/CD tools!
+# **WebProject: Java Web App with AWS CI/CD**  
+Welcome to **WebProject**, where I build and deploy a **Java-based web application** using **AWS CI/CD tools**! 🚀  
 
+## **Table of Contents**  
+- [Introduction](#introduction)  
+- [Project Architecture](#project-architecture)  
+- [Technologies Used](#technologies-used)  
+- [AWS CI/CD Pipeline](#aws-cicd-pipeline)  
+- [Successful Deployment Confirmation](#successful-deployment-confirmation)  
+- [Contact](#contact)  
+- [Conclusion](#conclusion)  
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Technologies](#technologies)
-- [Contact](#contact)
-- [Conclusion](#conclusion)
+---
 
-## Introduction
-This project is used for an introduction to creating and deploying a Java-based web app using AWS, especially their CI/CD tools.
+## **Introduction**  
+This project is designed as an **introduction to CI/CD** using AWS services. It automates the deployment of a **Java-based web application**, ensuring **continuous integration and delivery**.  
 
-The deployment pipeline I'm building around the Java web app in this repository is invisible to the end-user but makes a big impact by automating the software release processes.
+### **Why I Built This Project**  
+✅ To gain hands-on experience in **DevOps and AWS CI/CD**.  
+✅ To automate the software release cycle **from development to deployment**.  
 
-- I'm doing this project to learn more about CI/CD and get hands-on experience in automating the flow from developing code to deployed web app.
-- This fits into my career goals because I want to become a DevOps engineer this year!
+---
 
-## Technologies
+## **Project Architecture**  
+The web app follows this **AWS CI/CD architecture**:  
 
-- **Amazon EC2**: I'm developing my web app on Amazon EC2 virtual servers so that software development and deployment happen entirely on the cloud.
-- **VSCode**: For my IDE, I chose Visual Studio Code. It connects directly to my development EC2 instance, making it easy to edit code and manage files in the cloud.
-- **GitHub**: All my web app code is stored and versioned in this GitHub repository.
-- **[COMING SOON] AWS CodeArtifact**: Once it's rolled out, CodeArtifact will store my artifacts and dependencies, which is great for high availability and speeding up my project's build process.
-- **[COMING SOON] AWS CodeBuild**: Once it's rolled out, CodeBuild will take over my build process. It'll compile the source code, run tests, and produce ready-to-deploy software packages automatically.
-- **[COMING SOON] AWS CodeDeploy**: Once it's rolled out, CodeDeploy will automate my deployment process across EC2 instances.
-- **[COMING SOON] AWS CodePipeline**: Once it's rolled out, CodePipeline will automate the entire process from GitHub to CodeDeploy, integrating build, test, and deployment steps into one efficient workflow.
+![Architecture](https://github.com/user-attachments/assets/38e82be3-70f2-4f14-84be-0f46ff3bb2c3)  
 
-## Contact
-If you have any questions or comments about my CI/CD project, please contact:
+### **Workflow Summary**  
+1. **Development**: Code is written and managed in **Visual Studio Code** inside an **EC2 instance**.  
+2. **Version Control**: The source code is pushed to **GitHub** for version control.  
+3. **Code Connection**: AWS **CodeConnection** links GitHub to AWS services securely for automatic updates.  
+4. **Build & Artifact Management**:  
+   - **AWS CodeArtifact** stores dependencies and package versions.  
+   - **AWS CodeBuild** compiles and tests the code.  
+   - The built artifacts are stored in **Amazon S3**.  
+5. **Deployment Automation**:  
+   - **AWS CodeDeploy** retrieves the artifacts from **S3** and deploys them to **EC2 Web Servers**.  
+6. **Continuous Delivery**:  
+   - **AWS CodePipeline** automates the entire workflow from GitHub to deployment.  
+7. **Security & Access Management**:  
+   - **IAM Roles & Policies** manage secure authentication and authorization across AWS services.  
+8. **Infrastructure as Code**:  
+   - **CloudFormation Stacks** automate the provisioning of AWS resources.  
 
-- [LinkedIn](https://www.linkedin.com/in/joseph-raji/)
+---
 
-## Conclusion
-Thank you for exploring this project! I'll continue to build this pipeline and apply my learnings to future projects.
+## **Technologies Used**  
+
+This project integrates several AWS services to **build, test, and deploy** the Java web app efficiently:  
+
+### **🛠 Development & Infrastructure**  
+- **Amazon EC2** - Hosts the web app and development environment.  
+- **AWS CloudFormation** - Automates infrastructure provisioning.  
+
+### **📂 Storage & Artifacts**  
+- **Amazon S3** - Stores the build artifacts for deployment.  
+- **AWS CodeArtifact** - Manages application dependencies.  
+  - **CodeArtifact Repository** - Stores built packages.  
+  - **CodeArtifact Domain** - Manages the repositories.  
+
+### **🔗 Source Control & CI/CD**  
+- **GitHub** - Stores and versions the source code.  
+- **AWS CodeConnection** - Securely connects GitHub to AWS.  
+- **AWS CodeBuild** - Builds and tests the web application.  
+- **AWS CodeDeploy** - Automates the deployment to EC2.  
+- **AWS CodePipeline** - Orchestrates the entire CI/CD workflow.  
+
+### **🔒 Security & IAM**  
+- **IAM Roles & Policies** - Manage permissions for AWS services.  
+
+---
+
+## **AWS CI/CD Pipeline**  
+The pipeline automates the deployment of new changes from **GitHub to a live web server**. Here’s how it looks in AWS CodePipeline:  
+
+![CodePipeline Screenshot](https://github.com/user-attachments/assets/57371991-ae76-4975-95d5-9635538503e0)  
+
+---
+
+## **Successful Deployment Confirmation**  
+When the deployment is successful, the following message appears on the web page:  
+
+![Web Page Screenshot](https://github.com/user-attachments/assets/81fd351c-9982-4a1c-a199-62b693de4f80)  
+
+---
+
+## **Contact**  
+If you have any questions or comments about my CI/CD project, feel free to connect:  
+
+- **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/joseph-raji/)  
+
+---
+
+## **Conclusion**  
+Thank you for exploring this project! I will continue refining the **CI/CD pipeline** and apply these learnings to future projects. 🚀  
+
+---
