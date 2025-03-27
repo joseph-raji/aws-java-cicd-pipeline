@@ -1,6 +1,22 @@
 # **WebProject: Java Web App with AWS CI/CD**  
 Welcome to **WebProject**, where I build and deploy a **Java-based web application** using **AWS CI/CD tools**! 🚀  
 
+## 🛠 Technologies Used  
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Amazon EC2">
+  <img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Amazon S3">
+  <img src="https://img.shields.io/badge/AWS%20CodeArtifact-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS CodeArtifact">
+  <img src="https://img.shields.io/badge/AWS%20CodeBuild-3F72AF?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS CodeBuild">
+  <img src="https://img.shields.io/badge/AWS%20CodeDeploy-9C27B0?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS CodeDeploy">
+  <img src="https://img.shields.io/badge/AWS%20CodePipeline-00BFFF?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS CodePipeline">
+  <img src="https://img.shields.io/badge/AWS%20CloudFormation-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS CloudFormation">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</p>
+
+
+
 ## **Table of Contents**  
 - [Introduction](#introduction)  
 - [Project Architecture](#project-architecture)  
